@@ -5,6 +5,7 @@ import numpy as np
 from pgportfolio.constants import *
 import pgportfolio.learn.network as network
 
+
 class NNAgent:
     def __init__(self, config, restore_dir=None, device="cpu"):
         self.__config = config

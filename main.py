@@ -104,6 +104,7 @@ def main():
             labels = algos
         plot.table_backtest(load_config(), algos, labels, format=options.format)
 
+
 def _set_logging_by_algo(console_level, file_level, algo, name):
     if algo.isdigit():
             logging.basicConfig(filename="./train_package/"+algo+"/"+name,
@@ -127,6 +128,7 @@ def _config_by_algo(algo):
     else:
         config = load_config()
     return config
+
 
 if __name__ == "__main__":
     main()
